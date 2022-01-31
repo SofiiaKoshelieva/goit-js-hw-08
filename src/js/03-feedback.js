@@ -7,9 +7,6 @@ initForm();
 
 formEl.addEventListener('submit', onFormSubmit);
 formEl.addEventListener('input', throttle(onFormInput, 500));
-
-formEl.addEventListener('submit', onFormSubmit);
-formEl.addEventListener('input', throttle(onFormInput, 500));
 function onFormSubmit(evt) {
     evt.preventDefault();
     const formElements = evt.target.elements;
@@ -23,8 +20,6 @@ function onFormSubmit(evt) {
     evt.target.reset();
     localStorage.removeItem(STORAGE_KEY);
 }
-
-
 
 function onFormInput(evt) {
   let userData = localStorage.getItem(STORAGE_KEY);

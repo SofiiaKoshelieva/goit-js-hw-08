@@ -583,8 +583,6 @@ var formEl = document.querySelector('.feedback-form');
 initForm();
 formEl.addEventListener('submit', onFormSubmit);
 formEl.addEventListener('input', (0, _lodash.default)(onFormInput, 500));
-formEl.addEventListener('submit', onFormSubmit);
-formEl.addEventListener('input', (0, _lodash.default)(onFormInput, 500));
 
 function onFormSubmit(evt) {
   evt.preventDefault();
